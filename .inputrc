@@ -1,6 +1,9 @@
 # Enable vi keybindings.
 set editing-mode vi
 
+# Disable delay of vi escape.
+set keyseq-timeout 5
+
 set show-mode-in-prompt on
 set vi-cmd-mode-string "\1\e[00;37m\2[vi:\1\e[00;34m\2NORMAL\1\e[00;37m\2]\1\e[00m\2 "
 set vi-ins-mode-string "\1\e[00;37m\2[vi:\1\e[00;33m\2INSERT\1\e[00;37m\2]\1\e[00m\2 "
