@@ -124,7 +124,7 @@ color_blue="\[\e[1;34m\]"
 
 if [ "$PS1" != "" ]
 then
-	  PS1="$color_green\t$color_red\$(__git_ps1) $color_blue\W $color_off\$ "
+  PS1="$color_green\t$color_red\$(__git_ps1) $color_blue\W $color_off\$ "
 fi
 
 # Settings for goenv.
