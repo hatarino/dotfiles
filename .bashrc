@@ -133,3 +133,9 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
+
+# Settings for tfenv.
+export PATH=$PATH:$HOME/.tfenv/bin
+
+# Settings for linuxbrew.
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
