@@ -1,3 +1,9 @@
+# Common
+alias ls='ls --color=auto'
+alias ll='ls -alhF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # Docker CLI
 alias dc='docker compose'
 alias dcud='docker compose up --detach'
