@@ -129,6 +129,9 @@ then
   PS1="$color_green\t$color_red\$(__git_ps1) $color_blue\W $color_off\$ "
 fi
 
+# Set default editor.
+export EDITOR=/usr/bin/vim
+
 # Settings for goenv.
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
