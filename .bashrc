@@ -129,6 +129,9 @@ then
   PS1="$color_green\t$color_red\$(__git_ps1) $color_blue\W $color_off\$ "
 fi
 
+# System management.
+export LC_TIME="en_US.UTF-8"
+
 # Set default editor.
 export EDITOR=/usr/bin/vim
 
