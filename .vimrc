@@ -13,3 +13,7 @@ set expandtab
 
 " Set hilighting.
 syntax on
+
+" Abbreviations.
+abbr _sh #!/bin/bash
+
