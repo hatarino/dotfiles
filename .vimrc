@@ -1,6 +1,9 @@
 " Show if insert mode or not.
 set showmode
 
+" Enable TrueColor.
+set termguicolors
+
 " Do not hilighting when searching.
 set nohlsearch
 
