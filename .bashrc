@@ -118,22 +118,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Customize prompt(PS1).
-color_off="\[\e[0m\]"
-color_red="\[\e[1;31m\]"
-color_green="\[\e[1;32m\]"
-color_blue="\[\e[1;34m\]"
-
-if [ "$PS1" != "" ]
-then
-  PS1="$color_green\t$color_red\$(__git_ps1) $color_blue\W $color_off\$ "
-fi
-
 # System management.
 export LC_TIME="en_US.UTF-8"
 
 # Set default editor.
 export EDITOR=/usr/bin/vim
+
+# Settings for pyenv.
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # Settings for goenv.
 export GOENV_ROOT="$HOME/.goenv"
@@ -147,3 +141,7 @@ export PATH=$PATH:$HOME/.tfenv/bin
 
 # Settings for linuxbrew.
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Settings for Starship.
+eval "$(starship init bash)"
+
