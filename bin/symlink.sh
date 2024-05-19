@@ -12,6 +12,15 @@ for file in "$dotfile_dir"/.??*; do
     [[ $(basename "$file") == ".gitignore" ]] && continue
     [[ $(basename "$file") == ".vscode" ]] && continue
 
+    # Create a symlink for Neovim configuration.
+    # This is temporary until creating a symlink for the .config directory.
+    if [ "$(basename "$file")" == ".config" ]; then
+        echo "Creating symlink for Neovim configuration"
+        ln -snfv "$file/nvim/init.lua" "$HOME/.config/nvim/init.lua"
+        echo "Finished creating symlink for Neovim configuration"
+        continue
+    fi
+
     # Skip if symlink or file already exists.
     if [ -e "$HOME/$(basename "$file")" ]; then
         echo "File already exists: $HOME/$(basename "$file")"
@@ -25,5 +34,4 @@ for file in "$dotfile_dir"/.??*; do
     echo "Finished creating symlink for $file"
 done
 
-# Create symlinks for all directories.
-# TODO: Implement this.
+# TODO: Implement .config directory symlink.
