@@ -13,6 +13,13 @@ if [ -d "$HOME/.pyenv" ]; then
     eval "$(pyenv init --path)"
 fi
 
+# Settings for pipx.
+if [ -e /usr/bin/pipx ]; then
+    # Created by `pipx` on 2024-06-01 06:55:15
+    # Modify default PATH added by pipx.
+    export PATH="$PATH:$HOME/.local/bin"
+fi
+
 # Settings for goenv.
 if [ -d "$HOME/.goenv" ]; then
     export GOENV_ROOT="$HOME/.goenv"
