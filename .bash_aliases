@@ -16,3 +16,6 @@ alias dcp='docker compose ps'
 
 # Neovim
 alias nvimdiff='nvim -d'
+
+# Kubectl
+alias k='kubectl'
