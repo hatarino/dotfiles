@@ -20,3 +20,8 @@ syntax on
 " Abbreviations.
 abbr _sh #!/bin/bash
 
+" Set a non-blinking vertical bar cursor for insert mode.
+let &t_SI .= "\e[6 q"
+" " Set a non-blinking block cursor for normal mode.
+let &t_EI .= "\e[2 q"
+
