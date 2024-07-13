@@ -19,5 +19,4 @@ alias nvimdiff='nvim -d'
 
 # Kubectl
 alias k='kubectl'
-alias k as='kubectl api-resources'
-
+alias kas='kubectl api-resources'
