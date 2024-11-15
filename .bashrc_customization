@@ -20,13 +20,9 @@ if [ -e /usr/bin/pipx ]; then
     export PATH="$PATH:$HOME/.local/bin"
 fi
 
-# Settings for goenv.
-if [ -d "$HOME/.goenv" ]; then
-    export GOENV_ROOT="$HOME/.goenv"
-    export PATH="$GOENV_ROOT/bin:$PATH"
-    eval "$(goenv init -)"
-    export PATH="$GOROOT/bin:$PATH"
-    export PATH="$PATH:$GOPATH/bin"
+# Settings for golang.
+if [ -x "/usr/local/go" ]; then
+    export PATH=$PATH:/usr/local/go/bin
 fi
 
 # Settings for tfenv.
