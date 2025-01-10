@@ -20,3 +20,7 @@ alias nvimdiff='nvim -d'
 # Kubectl
 alias k='kubectl'
 alias kas='kubectl api-resources'
+
+# Git
+alias g='git'
+
